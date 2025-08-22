@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #f7fafc;
+}
+
+html, body {
+  background: var(--bg);
+}
+
+.btn {
+  @apply inline-flex items-center justify-center rounded-xl px-4 py-2 font-medium shadow-soft transition;
+}
+.btn-primary { @apply bg-life text-white hover:opacity-90; }
+.btn-accent { @apply bg-flame text-white hover:opacity-90; }
+.card { @apply rounded-2xl bg-white shadow-soft p-5; }
+.page { @apply mx-auto max-w-3xl p-6 space-y-6; }
